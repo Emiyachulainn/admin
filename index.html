@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <script src="dist/js/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="register" class="register">
+        <h3 class="text-center">注册</h3>
+        <div ng-controller="reg" class="reg">
+            <form>
+                <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input type="text" ng-model="userName" class="form-control" placeholder="请输入账户">
+                </div>
+                <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input type="text" class="form-control" placeholder="请输入邮箱">
+                </div>
+                <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+                    <input type="password" class="form-control" placeholder="请输入密码">
+                </div>
+                 <div class="input-group form-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                    <input type="text" class="form-control" placeholder="请输入手机">
+                </div>
+
+                <div class="checkbox">
+                    <label>
+                    <input type="checkbox">
+                        同意协议
+                    </label>
+                    <a href="login.html">已有账号，马上登录</a>
+                </div>
+                <button type="button" class="btn btn-primary btn-block">提交注册</button>
+
+            </form>
+        </div>
+    </div>
+    <div class="footer text-center">
+        @copyright by <a href="http://github.com/ranyunlong/">YunlongRan</a> 2016-2014
+    </div>
+    <script>
+        var app = angular.module('register',[]);
+            app.controller('reg',function($scope){
+                $scope.userName = '';
+                $scope.email = '';
+                $scope.userPwd = '';
+            });
+    </script>
+</body>
+</html>

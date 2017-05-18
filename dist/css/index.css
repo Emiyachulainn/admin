@@ -1,0 +1,46 @@
+body {
+  background: #0ca3d2;
+}
+.register,
+.login {
+  width: 400px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 100px auto;
+  padding: 8px;
+}
+.register h3,
+.login h3 {
+  margin: 0;
+  padding: 12px 0;
+  background: #f3f3f3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 2px solid #cfcfcf;
+}
+.register .reg,
+.login .reg,
+.register .log,
+.login .log {
+  background: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.register .reg .checkbox a,
+.login .reg .checkbox a,
+.register .log .checkbox a,
+.login .log .checkbox a {
+  float: right;
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  font-weight: bold;
+  font-family: 'microsoft yahei', 'simsun';
+}
+.footer a {
+  color: inherit;
+  text-decoration: underline;
+}
